@@ -1,0 +1,165 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #62bcf0;
+}
+
+button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1480px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(3, 80, 143);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.title{
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px;  
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #cfcfcf62;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #62bcf0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #0f63bd;
+}
+
+input{
+    font-size: 18px;
+}
+
+
+@media (max-width: 750px) {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        display: none;
+    }
+
+    th, td {
+        background: #ffffff;
+        border: none;
+    }
+
+    td {
+        position: relative;
+        text-align: right;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 90%;
+        font-style: italic;
+        text-align: left; 
+    }
+
+    .btn{
+        width: 100%;
+    }
+    
+    tr {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sumbit-btn{
+    width: 100%;
+    background-color: #62bcf0;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.sumbit-btn:hover {
+    background-color: #0f63bd;
+}
+
+input{
+    width: 98%;
+    padding: 5px 0;
+    margin: 5px 0;
+}

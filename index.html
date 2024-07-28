@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Банковские кредиты</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Ставка (%)</th>
+                    <th>Срок (лет)</th>
+                    <th>Оформить заявку</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Название">Кредит1</td>
+                    <td data-label="Ставка (%)">14,6%</td>
+                    <td data-label="Срок (лет)">20 лет</td>
+                    <td><button class="btn">Оформить</button></td>
+                </tr>
+                <tr>
+                    <td data-label="Название">Кредит2</td>
+                    <td data-label="Ставка (%)">9,9%</td>
+                    <td data-label="Срок (лет)">12 лет</td>
+                    <td><button class="btn">Оформить</button></td>
+                </tr>
+                <tr>
+                    <td data-label="Название">Кредит3</td>
+                    <td data-label="Ставка (%)">14,4%</td>
+                    <td data-label="Срок (лет)">20 лет</td>
+                    <td><button class="btn">Оформить</button></td>
+                </tr>
+                <tr>
+                    <td data-label="Название">Кредит4</td>
+                    <td data-label="Ставка (%)">8,9%</td>
+                    <td data-label="Срок (лет)">12 лет</td>
+                    <td><button class="btn">Оформить</button></td>
+                </tr>
+                <tr>
+                    <td data-label="Название">Кредит5</td>
+                    <td data-label="Ставка (%)">12,6%</td>
+                    <td data-label="Срок (лет)">8 лет</td>
+                    <td><button class="btn">Оформить</button></td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="apply-form">
+                <h2>Оформление заявки</h2>
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Почта:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit" class="sumbit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
